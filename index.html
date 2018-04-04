@@ -1,115 +1,151 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
-<meta name="title" content="C.B.R. : Comic Book Reader" />
-<meta name="Description" content="C.B.R. is the viewer you need to enjoy all your ebook. It has an impressive futeare list from library management, in memory reading to be quick and effective, multiple format support and conversion like rar, zip, epub, pdf and xps." />
-<meta name="keywords" content="reader,ebook,CBR,CBZ,PDF,XPS,ePUB" />
-<title>C.B.R. : Comic Book Reader</title>
-
-<!--<script src="hidden/jquery.js" type="text/javascript"></script>!-->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
-<script src="index_data.js" type="text/javascript"></script>
-<script src="galleria/galleria-1.2.8.min.js" type="text/javascript"></script>
-
-<style type="text/css">
-		a {
-		color:gray; }
-
-		/* some extra styles for the layer */
-            .galleria-layer div{top:320px;left:10px;padding:5px;position:absolute;background:#000;color:#fff}
-            .galleria-layer h2{margin: 0 0 8px;font-size:22px;line-height:1;}
-            .galleria-layer p{margin:0}
-
-			#galleria{ height: 450px; margin : 10px 10px 10px 10px; }
-			.auto-style1 { font-size: x-large;
+﻿<!DOCTYPE HTML>
+<html>
+	<head>
+        <title>C.B.R. software suite</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body>
+<script type="text/javascript">
+function launchStore(packageFamilyName) {
+    var sessionId = "";
+	$("#wsFrame").attr("src", "ms-windows-store:PDP?PFN=" + packageFamilyName + "&sessionId=" + sessionId);
 }
-		.auto-style2 {
-	text-align: center;
-}
-		</style>
+</script>
+<iframe id="wsFrame" style="display: none" ></iframe>
 
-</head>
+		<!-- Sidebar -->
+			<section id="sidebar">
+				<div class="inner">
+					<nav>
+						<ul>
+							<li><a href="#intro">Welcome</a></li>
+							<li><a href="#one">What is CBR</a></li>
+							<li><a href="#two">Downloads</a></li>
+						</ul>
+					</nav>
+				</div>
+			</section>
 
-<body style="background-color: #000000; color: #FFFFFF; margin: 10px 80px 10px 80px; font-family: Arial, Helvetica, sans-serif; font-size: small;">
+		<!-- Wrapper -->
+			<div id="wrapper">
 
-<div>
-	<table cellpadding="0" cellspacing="0" style="width: 100%">
-		<tr>
-			<td><img alt="" src="book128.png"></td>
-			<td>
-				<span class="auto-style1">C.B.R.</span><br class="auto-style1" />
-				<span class="auto-style1">Comic Book Reader</span><br />The most intuitive book reading software for any standard ebook format
-			</td>
-			<td>
-			<table style="width: 100%; height:128px">
-				<tr align="center">
-					<td>
-					<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
-						<input type="hidden" name="cmd" value="_s-xclick">
-						<input type="hidden" name="hosted_button_id" value="GEDE3XSMSZ754">
-						<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-						<img alt="" border="0" src="https://www.paypalobjects.com/fr_FR/i/scr/pixel.gif" width="1" height="1">
-					</form>
-					</td>
-				</tr>
-				<tr align="center" valign="bottom">
-					<td>
-					<a href="index_fr.html">
-					<img alt="" height="16" src="images/flag_france.png" width="16" border="0" /></a>
-					<a href="index.html">
-					<img alt="" height="16" src="images/flag_usa.png" width="16" border="0" /></a>
-					</td>
-				</tr>
-			</table>
-			</td>
-		</tr>
-	</table>
+				<!-- Intro -->
+					<section id="intro" class="wrapper style1 fullscreen fade-up">
+						<div class="inner">
+                            <h1> C.B.R.</h1>
+                                <p>
+                                    C.B.R. (Comic Book Readers) is a software suite dedicated to comic book reading oriented to be simple and powerfull.
+                                    It is avalaible as desktop only, Windows 8+ and for all Windows 10 platforms under ComIko tradename. It is done on my free time for your pleasure !
+                                </p>
+                                <ul class="actions">
+                                    <li><a href="#one" class="button special">Learn more</a></li>
+                                </ul>
 </div>
-	<div style="margin: 10px; padding: 20px; border: 1px solid #FF9900; text-align: center;">
-		<img align="middle" alt="" height="40" src="images/WindowsStore_tile_green_small_40x40.png" width="40" />&nbsp;&nbsp;
-			CBR for Windows 8/RT is now available on the Windows Store. 
-		<a href="http://apps.microsoft.com/windows/en-US/app/c-b-r-comic-book-reader/c2859873-be23-49bb-a386-d52f4be6ae95">Check it here !
-		</a>
-			</div>		
-	<div id="galleria">
-		</div>
-        <script>
-			Galleria.loadTheme('galleria/themes/classic/galleria.classic.min.js');
-            Galleria.run('#galleria', { dataSource: data });
-        </script>
-        
-	<div>
+					</section>
 
-		<br/>C.B.R. is the viewer you need to enjoy all your ebooks. It has an 
-			impressive futeare list like library management, in memory reading 
-			to be 
-			quick and effective, multiple format support and conversion like rar, zip, 
-			epub, xps...
-		<br/><br/>
-		<a href="http://wfpbookreader.codeplex.com/">Download on Codeplex</a>
-				<br/>
-				<br/>
-				<br/>
-		C.B.R. publications and links  
-			<ul>
-				<li><a href="http://wfpbookreader.codeplex.com/">Codeplex source hosting</a></li>
-				<li><a href="http://www.codeproject.com/KB/WPF/CBR.aspx">New Code Project technical article</a></li>
-				<li>
-				<a href="http://www.codeproject.com/KB/WPF/Wpf_Book_Reader.aspx">Old Code Project article</a></li>
-				<li><a href="http://guillaumewaser.wordpress.com/">My Blog</a></li>
-		</ul>
-	</div>	
-</div>
-<div class="auto-style2">
-	<a href="http://www.filefishstick.com/38735/details-c-b-r-.html" title="download C.B.R. free full version"><img src="http://www.filefishstick.com/img.php?i=1-38735" width="88" height="31" border="0" alt="download C.B.R. free full version"></a>
-	<a href="http://www.top4download.com/" target="_blank"><img src="http://www.top4download.com/templates/T4D/images/award_88x31_listed.gif" alt="Free Software Download - Top 4 Download" border="0" width="88" height="31"/></a>
-	<a href="http://www.fortedownloads.com"><img src="http://www.fortedownloads.com/images/fortedownloads_88x31.png" style="border:none;" width="88" height="31" alt="Forte Downloads"></a>
-	<a href="http://www.windows7download.com/" target="_blank"><img src="http://www.windows7download.com/templates/w7d/images/awards/award_88x31_listed.png" alt="Free Software Download - Windows 7 Download" border="0" width="88" height="31"/></a>
-	<a href="http://www.fileparade.com"><img border="0" alt="File Parade: Freeware and Trialware Downloads" src="http://www.fileparade.com/Images/logo88x31.png" /></a>
-	<a target="_blank" href="http://www.softoxi.com/cbr-video-trailer-screenshots.html"><img src="http://www.softoxi.com/images/public/awards/award_video.png" border="0" alt="CBR video tutorial at softoxi.com" height="31" ></a>
-	<a href="http://www.windows8downloads.com/" target="_blank"><img src="http://www.windows8downloads.com/img/awards/award_88x31_listed.png" alt="Free Software Download - Windows 8 Downloads" border="0" width="88" height="31"/></a>
-</div>
+				<!-- One -->
+					<section id="one" class="wrapper style2 spotlights">
+						<section>
+							<a href="#" class="image"><img src="images/desk_screen/cbr_twopages_grid.jpg" alt="" data-position="center center" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>CBR</h2>
+									<p>The original version of C.B.R. is available as full desktop programm.</p>
+									<ul class="actions">
+										<li><a href="original.html" class="button special">Learn more</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+						<section>
+							<a href="#" class="image"><img src="images/rt_screen/screenshot_home.png" alt="" data-position="top center" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>CBR.WinRT</h2>
+									<p>For Windows 8+ platform, CBR.WinRT </p>
+									<ul class="actions">
+										<li><a href="cbr_rt.html" class="button special">Learn more</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+						<section>
+							<a href="#" class="image"><img src="images/comiko_screen/en_reading.png" alt="" data-position="25% 25%" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>ComIko</h2>
+									<p>Dedicated for simplicity under all Window 10 platforms, ComIko is now the most powerfull and easiest software for comic reading .</p>
+									<ul class="actions">
+										<li><a href="comiko.html" class="button special">Learn more</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+					</section>
 
-</body>
+				<!-- Two -->
+					<section id="two" class="wrapper style3 fade-up">
+						<div class="inner">
+							<h2>Downloads</h2>
+							<p>All versions can be downloaded for free or a trial period. Feel free and try them !.</p>
+							<div class="features">
+                                <section>
+                                    <span class="icon major fa-github-square"></span>
+                                    <h3>CBR</h3>
+                                    <p>It is available as setup, zip and source code on github. It is the most complete reader with full library managment and impressive feature list.</p>
+                                    <ul class="actions">
+                                        <li><a target="new" href="https://github.com/TheCamel/CBR" class="button special">Download now...</a></li>
+                                    </ul>
+                                    <ul class="actions">
+                                        <li><a target="new" href="https://github.com/TheCamel/CBR" class="button special">Get sources...</a></li>
+                                    </ul>
+                                </section>
+								<section>
+									<span class="icon major fa-lock"></span>
+                                    <h3>CBR.WinRT</h3>
+									<p>First version on the Windows Store, It was dedicated to reading and able to communicate with CBR Desktop. For minimal price, but you can try it for free</p>
+								<ul class="actions">
+								<li><a class="button special" onclick="javascript:launchStore('19996GuillaumeWaser.C.B.R.-ComicBookReader_smxz6t1ek9yd8');">Store direct...</a></li></ul>
+							</section>
+								<section>
+									<span class="icon major fa-cog"></span>
+									<h3>ComIko</h3>
+									<p>The lastest of the suite, downloadable on the Windows Store and available for all Windows 10 platforms - including Xbox, Hololens !.</p>
+								<ul class="actions">
+								<li><a class="button special" onclick="javascript:launchStore('19996GuillaumeWaser.ComIko_smxz6t1ek9yd8');">Store direct...</a></li></ul>
+								
+							</ul>
+							</section>
+							<section>
+									</section>
+							</div>
+							
+						</div>
+					</section>
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper style1-alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; C.B.R. & trademarks. All rights reserved.</li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
 </html>
